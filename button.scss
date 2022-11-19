@@ -1,0 +1,24 @@
+@import "./partials/palette";
+@import "./partials/devices";
+
+.header {
+    &__btn {
+        width: 30%;
+        color: $saffron;
+        font-weight: 800;
+        background-color: $paradise-pink;
+        padding: 10px;
+        margin: 20px;
+        border: 2px solid rgb(231, 102, 128);
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+
+        &:hover {
+            background-color: $royal-purple;
+        }
+
+        &:active {
+            background-color: $russian-violet;
+        }
+    }
+}

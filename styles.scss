@@ -1,0 +1,32 @@
+@use "./button.scss";
+@use "./small.scss";
+@use "./medium.scss";
+@use "./large.scss";
+@use "./xl.scss";
+@use "./xxl.scss";
+@use "./nav.scss";
+@import "./partials/palette";
+@import "./partials/devices";
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $dark-purple;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $russian-violet;
+    width: 100vw;
+    height: 100vh;
+}

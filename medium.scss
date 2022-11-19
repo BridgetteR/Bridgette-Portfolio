@@ -1,0 +1,5 @@
+@import "./partials/palette";
+@import "./partials/devices";
+
+@media only screen and (min-width: ($sm +1px)) and (max-width: $md) {
+}

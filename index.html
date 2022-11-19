@@ -4,8 +4,99 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <link rel="stylesheet" href="styles.css" />
-        <title>Document</title>
+        <script src="script.js"></script>
+        <title>Bridgette's Portfolio</title>
     </head>
-    <body></body>
+    <body>
+        <nav class="navbar">
+            <a href="javascript:void(0);" class="icon" onclick="hamOpen()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <header class="header">
+            <h1 class="header__title">Bridgette's Portfolio</h1>
+            <h2 class="header__title header__title--secondary">
+                Junior Software Engineer
+            </h1>
+            <button class="header__btn" onclick="window.location.href='#about'">
+                Enter
+            </button>
+        </header>
+
+        <main>
+            <div class="about" id="about">
+                <h2 class="about__title">About</h2>
+                <div class="about__card">
+                    <img
+                        class="card__img"
+                        src="https://www.placecage.com/200/200"
+                    />
+                    <h2 class="card__title">Bridgette</h2>
+                    <p class="card__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus fugit suscipit voluptatum dolor, eos quam
+                        inventore consequatur reprehenderit omnis autem! Eos
+                        voluptatum optio porro distinctio quis id neque ratione
+                        perspiciatis!
+                    </p>
+                </div>
+            </div>
+
+            <!-- This is where you're up to dipshit -->
+            <div class="skills" id="skills">
+                <h2 class="skills__title">Skills</h2>
+            </div>
+
+            <div class="projects" id="projects">
+                <h2 class="projects__title">Projects</h2>
+                <div class="projects__card">
+                    <img
+                        class="card__img"
+                        src="https://www.placecage.com/200/200"
+                    />
+                    <h2 class="card__title">Project 1</h2>
+                    <p class="card__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus fugit suscipit voluptatum dolor, eos quam
+                        inventore consequatur reprehenderit omnis autem! Eos
+                        voluptatum optio porro distinctio quis id neque ratione
+                        perspiciatis!
+                    </p>
+                </div>
+
+                <div class="projects__card">
+                    <img
+                        class="card__img"
+                        src="https://www.placecage.com/200/200"
+                    />
+                    <h2 class="card__title">Project 2</h2>
+                    <p class="card__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus fugit suscipit voluptatum dolor, eos quam
+                        inventore consequatur reprehenderit omnis autem! Eos
+                        voluptatum optio porro distinctio quis id neque ratione
+                        perspiciatis!
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
