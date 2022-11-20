@@ -54,11 +54,34 @@
   .card__img {
     border-radius: 25px;
   }
+  .card__img--small {
+    padding: 10px;
+    margin: 5px;
+    background-color: #724e91;
+    border-radius: 25px;
+    transition: 0.2s;
+  }
+  .card__img--small:hover {
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
   .card__title {
     padding: 5px;
   }
   .card__para {
     text-align: left;
+  }
+  .skills {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(206, 206, 206);
+    text-align: center;
+    background-color: #451f55;
   }
   .projects {
     margin: 20px;
@@ -90,6 +113,35 @@
   .projects__card:hover {
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+  }
+  .contact {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(206, 206, 206);
+    text-align: left;
+    background-color: #451f55;
+  }
+  .contact__form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: #724e91;
+    font-weight: bold;
+  }
+  .contact a {
+    text-decoration: none;
+    color: #f8c630;
+    padding: 5px;
+  }
+  .contact p {
+    padding: 5px;
   }
 }
 .navbar {
