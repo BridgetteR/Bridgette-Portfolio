@@ -1,0 +1,100 @@
+@use "../partials/button.scss";
+@use "../partials/mixins";
+@import "../partials/palette";
+@import "../partials/devices";
+
+@media only screen and (max-width: $sm) {
+    .header {
+        &__title {
+            color: $saffron;
+            margin-top: 50px;
+            font-size: 10vw;
+
+            &--secondary {
+                margin: 0px;
+                font-size: 5vw;
+            }
+        }
+    }
+
+    .about {
+        @include mixins.main-bg;
+
+        &__card {
+            @include mixins.main-card;
+        }
+    }
+
+    .card {
+        &__img {
+            border-radius: 25px;
+
+            &--small {
+                padding: 10px;
+                margin: 5px;
+                background-color: $royal-purple;
+                border-radius: 25px;
+                transition: 0.2s;
+
+                &:hover {
+                    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &__title {
+            padding: 5px;
+        }
+
+        &__para {
+            text-align: left;
+        }
+    }
+
+    .skills {
+        @include mixins.main-bg;
+
+        &__card {
+        }
+    }
+
+    .projects {
+        @include mixins.main-bg;
+
+        &__card {
+            @include mixins.main-card;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .contact {
+        @include mixins.main-bg;
+
+        &__form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 25px;
+            background-color: $royal-purple;
+            font-weight: bold;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $saffron;
+            padding: 5px;
+        }
+
+        & p {
+            padding: 5px;
+        }
+    }
+}

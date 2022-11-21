@@ -1,0 +1,29 @@
+@import "./palette";
+@import "./devices";
+
+@mixin main-bg {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(206, 206, 206);
+    text-align: center;
+    background-color: $russian-violet;
+}
+
+@mixin main-card {
+    margin: 20px;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: $royal-purple;
+    color: rgb(206, 206, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    text-align: center;
+}
