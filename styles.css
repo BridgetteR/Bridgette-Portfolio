@@ -20,7 +20,8 @@
   .header__title {
     color: #f8c630;
     margin-top: 50px;
-    font-size: 10vw;
+    font-size: 9vw;
+    padding: 0px 10px;
   }
   .header__title--secondary {
     margin: 0px;
@@ -53,6 +54,7 @@
   }
   .card__img {
     border-radius: 25px;
+    width: auto;
   }
   .card__img--small {
     padding: 10px;
@@ -70,6 +72,7 @@
   }
   .card__para {
     text-align: left;
+    width: 100%;
   }
   .skills {
     margin: 20px;
@@ -128,17 +131,21 @@
   }
   .contact__form {
     display: grid;
+    width: 75%;
     grid-template-columns: 1fr 2fr;
     margin: 20px;
     padding: 40px;
     border-radius: 25px;
     background-color: #724e91;
     font-weight: bold;
+    text-align: left;
   }
   .contact a {
     text-decoration: none;
     color: #f8c630;
     padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .contact p {
     padding: 5px;

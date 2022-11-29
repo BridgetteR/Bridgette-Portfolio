@@ -8,7 +8,8 @@
         &__title {
             color: $saffron;
             margin-top: 50px;
-            font-size: 10vw;
+            font-size: 9vw;
+            padding: 0px 10px;
 
             &--secondary {
                 margin: 0px;
@@ -28,6 +29,7 @@
     .card {
         &__img {
             border-radius: 25px;
+            width: auto;
 
             &--small {
                 padding: 10px;
@@ -49,6 +51,7 @@
 
         &__para {
             text-align: left;
+            width: 100%;
         }
     }
 
@@ -79,18 +82,22 @@
 
         &__form {
             display: grid;
+            width: 75%;
             grid-template-columns: 1fr 2fr;
             margin: 20px;
             padding: 40px;
             border-radius: 25px;
             background-color: $royal-purple;
             font-weight: bold;
+            text-align: left;
         }
 
         & a {
             text-decoration: none;
             color: $saffron;
             padding: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         & p {
